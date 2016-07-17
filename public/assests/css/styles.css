@@ -1,0 +1,50 @@
+
+/* ------------------------------------------------ Style of table -----------------------------------------------*/
+table{
+    width: 100%
+}
+tr {
+}
+td {
+    position: relative;
+    padding: 50px 15px;
+    text-align: center;
+    vertical-align: top;
+    font-size: 12px;
+}
+table img {
+    width: 240px;
+    height: 200px;
+    margin-bottom: 15px;
+    box-shadow: 4px 3px 4px black;
+    cursor: pointer;
+}
+/* ------------------------------------------------ Style of slideshow  -----------------------------------------------*/
+.slideshow {
+    width: 752px;
+    margin: 0px auto;
+    position: relative;
+}
+.slideshow img {
+    width: 600px;
+    margin: 15px 0px;
+    border: 7px dotted white;
+    box-shadow: 2px 2px 4px grey;
+    height: 600px;
+}
+#prev {
+    border-radius: 25px 5px 5px 25px;
+    padding: 20px;
+}
+#next {
+    border-radius: 5px 25px 25px 5px;
+    padding: 20px;
+}
+#close {
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    padding: 4px 10px;
+    /*background: red;*/
+    border-radius: 5px 50% 50% 5px;
+}

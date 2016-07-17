@@ -1,0 +1,22 @@
+{
+  "name": "ecomapp",
+  "version": "1.0.0",
+  "description": "first app of vimani soft",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Shikha Ninad Singh Negi",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-node": "^0.1.0",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "jsonwebtoken": "^7.0.0",
+    "mongoose": "^4.4.20",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2"
+  }
+}

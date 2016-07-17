@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	   <link rel="stylesheet" href="assests/css/styles.css?version=1.0" />
+</head>
+<body>
+<table ng-show = "!showBigImage">
+	<tr ng-repeat = "imageRows in imageArr">
+		<td ng-repeat = "image in imageRows">
+			<img src="{{image.url}}" title="{{image.title}}" ng-click="showImage(image)" />
+		</td>
+	</tr>
+</table>
+<div ng-show = "showBigImage" class="slideshow">
+	<input type="button" id="prev" value="<" ng-click="showPrevious()"></input>
+	<img src={{currImage.url}}/>
+	<input type="button" id="next" value=">" ng-click = "showNext()"></input>
+ 	<input id="close" title="Close" type="button" ng-click="closeImg()" value="x"/>
+</div>
+</body>
+</html>

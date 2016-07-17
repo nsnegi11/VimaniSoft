@@ -1,0 +1,51 @@
+<div class="row col-sm-6 col-sm-offset-3" ng-app="registerApp">
+
+  <div class="jumbotron">
+    <h1>Register User</h1>
+    <form ng-submit="register.registerUser()">
+      <div class="alert alert-danger" ng-if="register.error">
+        {{ register.error }}
+      </div>
+      <!-- FIRSTNAME INPUT -->
+      <div class="form-group">
+        <label>First Name</label>
+        <input type="text" class="form-control" ng-model="register.registerData.firstName">
+      </div>
+      <!-- MIDDLENAME INPUT -->
+      <div class="form-group">
+        <label>Middle Name</label>
+        <input type="text" class="form-control" ng-model="register.registerData.middleName">
+      </div>
+      <!-- LASTNAME INPUT -->
+      <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" class="form-control" ng-model="register.registerData.lastName">
+      </div>
+      <!-- USERNAME INPUT -->
+      <div class="form-group">
+        <label>Username</label>
+        <input type="text" class="form-control" ng-model="register.registerData.username">
+      </div>
+      <!-- PASSWORD INPUT -->
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" ng-model="register.registerData.password">
+      </div>
+      <!-- EMAIL INPUT -->
+      <div class="form-group">
+        <label>Email Id</label>
+        <input type="text" class="form-control" ng-model="register.registerData.emailID">
+      </div>
+      <!-- USERNAME INPUT -->
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="text" class="form-control" ng-model="register.registerData.phoneNumber">
+      </div>
+      <!-- REGISTER BUTTON -->
+      <button type="submit" class="btn btn-block btn-primary">
+        <span ng-if="!register.processing">Register</span>
+        <span ng-if="register.processing">Processing</span>
+      </button>
+    </form>
+  </div>
+ </div>
