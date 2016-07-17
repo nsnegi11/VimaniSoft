@@ -1,2 +1,2 @@
 # VimaniSoft
-VimaniSoft
+VimaniSoft - E-Comm application
